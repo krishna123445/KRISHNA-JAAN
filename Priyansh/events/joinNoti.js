@@ -31,48 +31,8 @@ module.exports.run = async function({ api, event }) {
     if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
         api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? " " : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
         const fs = require("fs");
-        return api.sendMessage("", event.threadID, () => api.sendMessage({body: `🍒💙•••Ɓ❍ʈ Ƈøɳɳɛƈʈɛɗ•••💞🌿
-        
-🕊️🌸...Ɦɛɭɭ❍ Ɠɣus Ɱɣ Ɲɑɱɛ Is 🍒💙•••✦𝘽𝙤𝙩✦•••💞🌿
-
-
-
-
- ✨💞Ɱɣ Ꭾɽɛfɪᵡ ɪs / 
-
-
-\n\nƬɣƥɛ${global.config.PREFIX}ꞪɛɭᎮ Ƭ❍ søø Ɱɣ Ƈøɱɱɑɳɗ ɭɪsʈ...🤍💫\n
-\nƐxɑɱƥɭɛ :\n
-
-${global.config.PREFIX}Sɧɑɣɽɪ..💜(Ƭɛxʈ)\n${global.config.PREFIX} (Ƥɧøʈø)🌬️🌳🌊
-
-🦋🌸Ƭɣƥɛ${global.config.PREFIX}Ɦɛɭƥ2 (Ɑɭɭ Ƈøɱɱɑɳɗʂ)...☃️💌
-
-${global.config.PREFIX} ɪɳfø (ɑɗɱɪɳ Iɳføɽɱɑʈɪøɳ)👀✍️
-...🍫🥀Ɱɣ ❍wɳɛɽ ɪs Ɱɽ ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙...🕊️☃️
-
-${global.config.PREFIX}🌺🍃Ƈɑɭɭɑɗ føɽ Ɑɳɣ ɪʂʂuɛ 
-<<<<<------------------------------>>>>>
-A̸N̸D̸ F̸O̸R̸ A̸N̸Y̸ R̸E̸P̸O̸R̸T̸ O̸R̸ C̸O̸N̸T̸A̸C̸T̸ B̸O̸T̸ D̸E̸V̸A̸L̸O̸P̸A̸R̸....💙🍫
-
-💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/priyanshu.rajput.official\n
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇 
-
-
-✮☸✮
-✮┼💞┼✮
-☸🕊️━━•🌸•━━🕊️☸
-✮☸✮
-✮┼🍫┼✮
-☸🎀━━•🧸•━━🎀☸
-✮┼🦢┼✮
-✮☸✮
-☸🌈━━•🤍•━━🌈☸
-✮☸✮
-✮┼❄️┼✮
-
-┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓🌸✦✧✧✧✧✰🍒ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🌿✰✧✧✧✧✦🌸  ┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
-`, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
+        return api.sendMessage("🍒🍒..𝗛𝗘𝗟𝗟𝗢 𝗘𝗩𝗘𝗥𝗬𝗢𝗡𝗘 🙋🏻‍♀️ 𝗞𝗥𝗜𝗦𝗛𝗡𝗔 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗪 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗...⛓️💝🕊️🍓", event.threadID, () => api.sendMessage({body: `🍒💙•••𝕂ℝ𝕀𝕊ℍℕ𝔸 𝔹𝕆𝕋•••💞🌿\n✧═════════•❁❀❁•═════════✧\n💝𝗢𝘄𝗻𝗲𝗿÷ ☞︎ [ ꧁ 𝐊𝐑𝐈𝐒𝐇𝐍𝐀 ꧂ ] ☜︎ 😍😘\n✧═════════•❁❀❁•═════════✧\n🩷🖤🇧 🇴 🇹 =🙋🏻‍♀️= 🇪 🇳 🇹 🇦 🇷 🖤🩷\n✧═════════•❁❀❁•═════════✧\n🍒🕊️🍓..𝙻𝙾 𝙼𝙴 𝙰𝙰 𝙶𝙰𝚈𝙰 𝙰𝙰𝙿𝙺𝙰 𝙿𝚈𝙰𝚁𝙰 𝙺𝚁𝙸𝚂𝙷𝙽𝙰 𝙱𝙾𝚃 𝙰𝙱 𝙹𝙰𝙻𝙳𝙸 𝙹𝙰𝙻𝙳𝙸 𝚂𝙴 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙺𝙰𝚁𝙾 𝙼𝙴𝚁𝙰 𝙴𝚅𝙴𝚁𝚈𝙾𝙽𝙴..🍒🕊️🍓\n✧═════════•❁❀❁•═════════✧\n💖🙈💝..𝕆ℝ 𝕄𝔼ℝ𝕀 𝔹𝕆𝕊𝕊 𝕂ℝ𝕀𝕊ℍℕ𝔸  𝕂𝕆 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝕊𝔼ℕ𝔻 𝕂𝔸ℝ 𝕂𝔸ℝ𝔻𝕆 𝕁𝔸𝕃𝔻𝕀 𝕁𝔸𝕃𝔻𝕀..🤭🙈💝\n✧═════════•❁❀❁•═════════✧\n💖🕊️💝🆈🅴÷🅼🅴🆁🅴÷🅱🅾🆂🆂÷🅺🆁🅸🆂🅷🅽🅰÷🅺🅸÷🅵🅰🅲🅴🅱🅾🅾🅺÷🅸🅳÷🅺🅸÷🅻🅸🅽🅺÷🅷🅴÷ <<<<[ https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL ]>>>>💖🙈💝\n✧═════════•❁❀❁•═════════✧\n💖🍓 𝐌𝐲 𝐏𝐑𝐄𝐅𝐈𝐗 ÷ ☞︎ [ ${global.config.PREFIX} ] ☜︎ 🍓💖\n✧═════════•❁❀❁•═════════✧\n┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓🌸✦✧✧✧✧✰🍒𝗞𝗥𝗜𝗦𝗛𝗡𝗔 🌿✰✧✧✧✧✦🌸  ┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛`
+, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
     }
     else {
         try {
@@ -93,8 +53,8 @@ A̸N̸D̸ F̸O̸R̸ A̸N̸Y̸ R̸E̸P̸O̸R̸T̸ O̸R̸ C̸O̸N̸T̸A̸C̸T̸ B�
             }
             memLength.sort((a, b) => a - b);
             
-            (typeof threadData.customJoin == "undefined") ? msg = "Hello Mr/Miss {name},\n─────────────────\n You're The {soThanhVien}Member ─────────────────\nOf {threadName} Group\n─────────────────\nPlease Enjoy Your Stay\n─────────────────\nAnd Make Lots Of Friends =)\n──────-°°__𝗧𝗿𝘂𝘀𝘁 𝗺e 🔐 °__!!>☁️✨❤️ My Owner  ✦͙͙͙͙❥⃝∗⁎.ʚ Priyansh Rajput ɞ.⁎∗❥⃝**͙✦͙͙͙ ❤️ Love you 😘 ummmma ❤️😍" : msg = threadData.customJoin;
-            msg = msg
+            (typeof threadData.customJoin == "undefined") ? msg = "💖💖😍☞𝗞𝗥𝗜𝗦𝗛𝗡𝗔 𝗕𝗢𝗧☜😍💖💖\n✧═════════•❁❀❁•═════════✧\n💖            🇼 🇪 🇱 🇨 🇴 🇲 🇪          💖\n✧═════════•❁❀❁•═════════✧\n💝🥀𝐎𝐖𝐍𝐄𝐑 :-  ☞💖👸 𝗞𝗥𝗜𝗦𝗛𝗡𝗔  👸💖☜\n✧═════════•❁❀❁•═════════✧\n💝🥀𝗕𝗢𝗧 𝗞𝗔 𝗡𝗔𝗠𝗘 :-☞💖👑 𝕂ℝ𝕀𝕊ℍℕ𝔸 𝔹𝕆𝕋 👑💖☜\n✧═════════•❁❀❁•═════════✧\n☞︎𝙽𝙴𝚆 𝙼𝙴𝙼𝙱𝙴𝚁 𝙺𝙾 𝙳𝙸𝙻 𝚂𝙴 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙺𝚁𝙸𝚂𝙷𝙽𝙰 𝙹𝙸 𝙾𝚁 𝚂𝙴 𝙼𝙰𝚂𝚃𝙸 𝙺𝙰𝚁𝙾 𝙰𝙱 𝙼𝙴𝚁𝙴 𝚂𝙰𝚃𝙷 𝙰𝙰𝙿𝙺𝙰 𝙿𝚈𝙰𝚁𝙰 𝙺𝚁𝙸𝚂𝙷𝙽𝙰😍🙈 ☜︎\n✧═════════•❁❀❁•═════════✧\n💖 𝗡𝗔𝗠𝗘÷ ☞︎💖[   {name} ]💖☜︎\n✧═════════•❁❀❁•═════════✧\n💖𝗚𝗥𝗢𝗨𝗣 𝗡𝗔𝗠𝗘÷ ☞︎[ {threadName} ]☜︎ \n✧═════════•❁❀❁•═════════✧\n𝐀𝐀𝐏 𝐄𝐒 𝐆𝐑𝐎𝐔𝐏 𝐊𝐄  ☞︎ [ {soThanhVien}𝐓𝐇 ]☜︎ 𝐇𝐎 𝐓𝐎 𝐊𝐇𝐀𝐎 𝐏𝐈𝐘𝐎 𝐎𝐑 𝐌𝐄𝐑𝐄 𝐒𝐀𝐓𝐇 𝐌𝐀𝐒𝐓𝐈 𝐊𝐀𝐑𝐎 🙂🖐️ 𝐀𝐀𝐏𝐊𝐀 🥀☞︎ 𝐊𝐑𝐈𝐒𝐇𝐍𝐀 ☜︎\n✧═════════•❁❀❁•═════════✧\n𝗢𝗪𝗡𝗘𝗥 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗜𝗗 :- 👇 https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL\n✧═════════•❁❀❁•═════════✧\nकिसी भी तरह की हेल्प के लिए कांटेक्ट करे 👉 [+916303****37]" : msg = threadData.customJoin;
+			msg = msg
             .replace(/\{name}/g, nameArray.join(', '))
             .replace(/\{type}/g, (memLength.length > 1) ?  'Friends' : 'Friend')
             .replace(/\{soThanhVien}/g, memLength.join(', '))

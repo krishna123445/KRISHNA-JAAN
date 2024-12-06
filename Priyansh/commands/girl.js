@@ -1,12 +1,12 @@
   module.exports.config = {
-  name: "girl",
+  name: "girldp",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "Random girl picturesl",
-  commandCategory: "Image",
-  usages: "girl",
-  cooldowns: 5,
+  credits: "PREM BABU",
+  description: "Girl Dp photos",
+  commandCategory: "Random-IMG",
+  usages: "girl dp",
+  cooldowns: 2,
   dependencies: {
     "request":"",
     "fs-extra":"",
@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-  var link = [
+    var link = [
 	 "https://i.imgur.com/uBVzoLu.jpg",
 "https://i.imgur.com/2SKrp2u.jpg",
 "https://i.imgur.com/eQScoB2.jpg",
@@ -11483,15 +11483,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/xNOKINt.jpg",
 "https://i.imgur.com/5Sy0mk1.jpg",
 ];
-  var max = Math.floor(Math.random() * 6);  
-var min = Math.floor(Math.random() * 2);
-  var data = await Currencies.getData(event.senderID);
-  var exp =  data.exp;
-  var money = data.money
-      if(money < 200) api.sendMessage("You need 200$ to see the photo!",event.threadID,event.messageID)
-          else {
-   Currencies.setData(event.senderID, options = {money: money -200})
-   var callback = () => api.sendMessage({body:`Pictures of pretty girls\nNumber of Photos: ${link.length}\n-200 dollars !`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)] + (max - min))).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
-     }
+  var callback = () => api.sendMessage({body:`💝𝗢𝘄𝗻𝗲𝗿÷ 💝😘 𝗞𝗥𝗜𝗦𝗛𝗡𝗦 😘💝`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };

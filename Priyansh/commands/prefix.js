@@ -25,12 +25,10 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     if (body === i.toUpperCase() | body === i | str === body) {
 const prefix = threadSetting.PREFIX || global.config.PREFIX;
       if (data.PREFIX == null) {
-        return out(`This Is My Prefix ⇉ [ ${prefix} ]\n💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/priyanshu.rajput.official\n
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇`)
+        return out(`🍒🕊️🍓𝗧𝗛𝗜𝗦 𝗜𝗦 𝗠𝗬 𝗣𝗥𝗘𝗙𝗜𝗫 ⇉☞︎ [ ${prefix} ] ☜︎ \n💖💖😍☞𝐊𝐑𝐈𝐒𝐇𝐍𝐀 𝐁𝐎𝐓 𝐁𝐀𝐁𝐔☜😍💖💖\n✧═════════•❁❀❁•═════════✧\n💝🥀𝐎𝐖𝐍𝐄𝐑 :-  ☞💖👑 𝗞𝗥𝗜𝗦𝗛𝗡𝗔 👑💖☜\n✧═════════•❁❀❁•═════════✧\n💝🥀𝐎𝐖𝐍𝐄𝐑 :-☞💖👑 𝕂ℝ𝕀𝕊ℍℕ𝔸 𝔹𝕆𝕋 👑💖☜\n✧═════════•❁❀❁•═════════✧\n☞︎🅺🆁🅸🆂🅷🅽🅰 🅵🅱︎ 🅸🅳 💓💖💝☜︎\n✧═════════•❁❀❁•═════════✧\nफेसबुक 🆔 :- 👇 https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL\n✧═════════•❁❀❁•═════════✧\nकिसी भी तरह की हेल्प के लिए कांटेक्ट करे 👉 [+918094828237]`)
       }
-      else return out('️️️️️️️️️️️️️️️️️️️️️️️️️️️This Is My Prefix ⇉ [ ${prefix} ]  \n💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/priyanshu.rajput.official\n👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇' + data.PREFIX)
+      else return out('️️️️️️️️️️️️️️️️️️️️️️️️️️️🍒🕊️🍓𝗧𝗛𝗜𝗦 𝗜𝗦 𝗠𝗬 𝗣𝗥𝗘𝗙𝗜𝗫 ⇉☞︎ [ ${prefix} ] ☜︎ \n💖💖😍☞𝐊𝐑𝐈𝐒𝐇𝐍𝐀 𝐁𝐎𝐓 𝐁𝐀𝐁𝐔☜😍💖💖\n✧═════════•❁❀❁•═════════✧\n💝🥀𝐎𝐖𝐍𝐄𝐑 :-  ☞💖👑 𝗞𝗥𝗜𝗦𝗛𝗡𝗔 👑💖☜\n✧═════════•❁❀❁•═════════✧\n💝🥀𝐎𝐖𝐍𝐄𝐑 :-☞💖👑 𝕂ℝ𝕀𝕊ℍℕ𝔸 𝔹𝕆𝕋 👑💖☜\n✧═════════•❁❀❁•═════════✧\n☞︎🅺🆁🅸🆂🅷🅽🅰 🅵🅱︎ 🅸🅳 💓💖💝☜︎\n✧═════════•❁❀❁•═════════✧\nफेसबुक 🆔 :- 👇 https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL\n✧═════════•❁❀❁•═════════✧\nकिसी भी तरह की हेल्प के लिए कांटेक्ट करे 👉 [+91 8094828237]' + data.PREFIX)
     }
-
   });
 };
 

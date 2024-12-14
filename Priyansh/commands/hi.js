@@ -14,16 +14,16 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     "hello",
     "hi",
     "hai",
-    "chào",
-    "chao",
-    "hí",
+    "Hello",
+    "HAY",
+    "HLO",
     "híí",
-    "hì",
+    "hy",
     "hìì",
-    "lô",
+    "Hlo",
     "hii",
-    "helo",
-    "hê nhô"
+    "Hi",
+    "Hy"
   ];
   let thread = global.data.threadData.get(event.threadID) || {};
   if (typeof thread["hi"] == "undefined", thread["hi"] == false) return
@@ -48,14 +48,14 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     let moment = require("moment-timezone");
     let hours = moment.tz('Asia/Manila').format('HHmm');
     let session = (
-    hours > 0001 && hours <= 400 ? "bright morning" : 
-    hours > 401 && hours <= 700 ? "morning" :
-    hours > 701 && hours <= 1000 ? "shining" :
-    hours > 1001 && hours <= 1200 ? "lunch" : 
-    hours > 1201 && hours <= 1700 ? "afternoon" : 
-    hours > 1701 && hours <= 1800 ? "gloaming" : 
-    hours > 1801 && hours <= 2100 ? "evening" : 
-    hours > 2101 && hours <= 2400 ? "late night" : 
+    hours > 0001 && hours <= 400 ? "𝐁𝐑𝐈𝐆𝐇𝐓 𝐌𝐎𝐑𝐍𝐈𝐍𝐆" : 
+    hours > 401 && hours <= 700 ? "𝐌𝐎𝐑𝐍𝐈𝐍𝐆" :
+    hours > 701 && hours <= 1000 ? "𝐒𝐇𝐈𝐍𝐈𝐍𝐆" :
+    hours > 1001 && hours <= 1200 ? "𝐋𝐔𝐍𝐂𝐇" : 
+    hours > 1201 && hours <= 1700 ? "𝐀𝐅𝐓𝐄𝐑𝐍𝐎𝐎𝐍" : 
+    hours > 1701 && hours <= 1800 ? "𝐆𝐋𝐎𝐀𝐌𝐈𝐍𝐆" : 
+    hours > 1801 && hours <= 2100 ? "𝐄𝐕𝐄𝐍𝐈𝐍𝐆" : 
+    hours > 2101 && hours <= 2400 ? "𝐋𝐀𝐓𝐄 𝐍𝐈𝐆𝐇𝐓" : 
     "error");
     let name = await Users.getNameUser(event.senderID);
     let mentions = [];
@@ -63,7 +63,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
       tag: name,
       id: event.senderID
     })
-    let msg = {body: `Hi ${name}, have a good ${session}`, mentions}
+    let msg = {body: `🙃😍 (◕‿◕) 𝐇𝐀𝐘 😻 ${name} 😻 𝐇𝐀𝐕𝐄 𝐀 🥰 𝐆𝐎𝐎𝐃 ${session} 🥰`, mentions}
     api.sendMessage(msg, event.threadID, (e, info) => {
       setTimeout(() => {
         api.sendMessage({sticker: sticker}, event.threadID);

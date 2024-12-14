@@ -8,7 +8,7 @@ module.exports.config = {
 	cooldowns: 0
         };
 module.exports.run = ({event, api}) =>{
-    const permission = ["100037743553265", "100037743553265"];
+    const permission = ["61568216591260", "61568216591260"];
   	if (!permission.includes(event.senderID)) return api.sendMessage("[ ERR ] You don't have permission to use this command, This Command Only For Priyansh", event.threadID, event.messageID);
-  api.sendMessage(`[ OK ] ${global.config.BOTNAME} Bot are now turned off.`,event.threadID, () =>process.exit(0))
+  api.sendMessage(`[ 𝐎𝐊 ] ${global.config.BOTNAME} ☺️🥰😜😝 ☜♡☞ ☆(❁‿❁)☆ 𝐀𝐀𝐏 𝐋𝐎𝐆 𝐌𝐄𝐑𝐒𝐄 𝐊𝐇𝐔𝐒𝐇 𝐍𝐇𝐈 𝐄𝐒𝐋𝐈𝐘𝐄 𝐌𝐄 𝐉𝐀 𝐑𝐀𝐇𝐀 𝐇𝐔 𝐎𝐅𝐅 𝐁𝐘𝐘 𝐒𝐀𝐁𝐈 𝐊𝐎 𝐊𝐇𝐈𝐘𝐀𝐋 𝐑𝐀𝐊𝐇𝐍𝐀 𝐀𝐀𝐏𝐍𝐀 𝐒𝐀𝐁𝐈 𝐌𝐄𝐌𝐁𝐄𝐑𝐒 😍😘 𝐑𝐀𝐃𝐇𝐄 𝐑𝐀𝐃𝐇𝐄 😍😘 ☆(❁‿❁)☆`,event.threadID, () =>process.exit(0))
 }

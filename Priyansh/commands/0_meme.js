@@ -277,7 +277,7 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/4nFOS0w.jpg" ,
 "https://i.imgur.com/tC2Sy8a.jpg" ,
      ];
-     var callback = () => api.sendMessage({body:`💝 𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿 𝗥𝗮𝘃𝗶 𝗞𝘂𝗺𝗮𝗿 💝`,attachment: fs.createReadStream(__dirname + "/cache/AOV.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/AOV.jpg"));  
+     var callback = () => api.sendMessage({body:`💝 𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿 𝗞𝗿𝗶𝘀𝗵𝗻𝗮 💝`,attachment: fs.createReadStream(__dirname + "/cache/AOV.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/AOV.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/AOV.jpg")).on("close",() => callback());
    };
    

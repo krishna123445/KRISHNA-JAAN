@@ -5,15 +5,14 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "Riya Roy", 
 	description: "Just Respond",
-	commandCategory: "no prefix",
+	commandCategory: "wall",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("Guddu") ||
-     react.includes("Relationship") || react.includes("Gulabo") || react.includes("GULABO") ||
+	if(react.includes("Guddu") || react.includes("Gulabo") || react.includes("GULABO") ||
 react.includes("LALLA") ||
 react.includes("Lalla")) {
 		var msg = {

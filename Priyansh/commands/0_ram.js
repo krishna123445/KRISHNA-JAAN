@@ -13,11 +13,19 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("RAM") ||
-     react.includes("ram") || react.includes("Ram") || react.includes("syam") || react.includes("Syam") || react.includes("SYAM") || react.includes("radhe") ||
+     react.includes("Radhe") || react.includes("Ram") || react.includes("syam") || react.includes("Syam") || react.includes("SYAM") || react.includes("radhe") ||
 react.includes("Radhe") ||
 react.includes("RADHE")) {
 		var msg = {
-				body: `💖🙏 ‼🌟—  ༢།धे ༢།धे >𝟑 ♥🌍"☘️-हर हर महादेव || जय श्री राम || जय श्री कृष्णा_[💙🚩🧡💐🌹💐 🚩🚩🚩जय माता दी 🕉️'*🙏🚩💐🌹 𝗚𝘂𝗱' 𝗺𝗼𝗿𝗻īīī𝗻𝗴 💐💐-⎯꯭̽⎯꯭̽𝗝ʌ⃪⃜߮͢ɣ 𝐒͢ʜ⃪𝆭⃡ʀ⃭ⷯː⃪ıı 𐍂ʌ⃪⃜߮͢ϻ̼᪱⟵̠̽🪶💞⎯꯭̽⎯꯭̽𝗝ʌ⃪⃜߮͢ɣ 𝐒͢ʜ⃪𝆭⃡ʀ⃭ⷯː⃪ıı 𐍂ʌ⃪⃜߮͢ϻ̼᪱⟵̠̽🪶💞 🙏💖`,attachment: fs.createReadStream(__dirname + `/ravi/ram.gif`)
+				body: `╔══•✥✥🌹ॐ🌹✥✥•══╗ 
+🌹🌟•❀•#Զเधॆ_Զเधॆ•❀•🌟🌹
+╚══•✥✥🌹ॐ🌹✥✥•══╝ 
+     💎‼#श्रीराधेकृष्णा‼💎
+🍒🌴‼श्री कृष्णा‼🌴🍒*
+      *श्रीकृष्ण गोविन्द हरे मुरारी,*
+    *हे नाथ नारायण वासुदेवाय!!!*
+        *꧁!! Զเधॆ Զเधॆ !!꧂*
+    ┈┉┅━❀꧁ω❍ω꧂❀━┅┉┈`,attachment: fs.createReadStream(__dirname + `/wall/radhe.webp`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙏", event.messageID, (err) => {}, true)

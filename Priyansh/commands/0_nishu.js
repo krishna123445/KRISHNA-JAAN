@@ -12,13 +12,13 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("Nishu")==0 || event.body.indexOf("NISHU")==0 || event.body.indexOf("nishu")==0 || event.body.indexOf("@Nishu Nishu")==0) {
+	if (event.body.indexOf("lalla")==0 || event.body.indexOf("LALLA")==0 || event.body.indexOf("Lalla")==0 || event.body.indexOf("LaLlA")==0) {
 		var msg = {
-				body: "🍒🍒 ग्रुप की चुडैल 🍒🍒",
-				attachment: fs.createReadStream(__dirname + "/ravi/nishu.jpg")
+				body: "🍒🍒 कृष्णा की जान ई लव यू लल्ला 🍒🍒",
+				attachment: fs.createReadStream(__dirname + "/wall/jaan.jpg")
 			}
 		api.sendMessage(msg, threadID, messageID);
-		api.setMessageReaction("👻", event.messageID, (err) => {}, true)
+		api.setMessageReaction("💋", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {

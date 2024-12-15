@@ -12,15 +12,20 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("dance") ||
-     react.includes("nach") || react.includes("party") || react.includes("Party") ||
-react.includes("naach") ||
-react.includes("nacho")) {
+	if(react.includes("Guddu") ||
+     react.includes("Relationship") || react.includes("Gulabo") || react.includes("GULABO") ||
+react.includes("LALLA") ||
+react.includes("Lalla")) {
 		var msg = {
-				body: `𝗡𝗮𝗰𝗵𝗼 𝗠𝗲𝗿𝗶 𝗝𝗮𝗮𝗻 𝗡𝗮𝗰𝗵𝗼 🙂🤟`,attachment: fs.createReadStream(__dirname + `/wall/jaan.jpg`)
+				body: `🌿🍒🌸𝗘𝗞 𝗗𝗨𝗦𝗥𝗘 𝗞𝗜 𝗝𝗔𝗔𝗡🌸🍒🌿
+\n✧═════════•❁❀❁•═════════✧\n
+🍒🍓☞︎ [ 𝗞𝗥𝗜𝗦𝗛𝗡𝗔 𝗞𝗜 𝗝𝗔𝗔𝗡 ] ☜︎🍓🍒\n✧═════════•❁❀❁•═════════✧\n💝💕💕😍𝗜 𝗟𝗢𝗩𝗘 𝗬𝗢𝗨 𝗟𝗔𝗟𝗟𝗔😚😍😘\n✧═════════•❁❀❁•═════════✧\n
+ •||• #ρყαɾ ʋσ _ɳԋι❌ ʝιʂɱҽ👉#Attitude 😒σɾ #Ego😏ԋσ, •||•
+•||• #ρყαɾ😍 _ƚσ ʋσ ԋαι #ʝιʂɱ _ҽƙ “ɾσƚԋαɳ”
+•||• ɱҽ#Expert 😘ԋσ ƚσ#ԃυʂɾα •|||• ɱαɳαɳҽ ɱҽ  👉#Perfect❤️️ ԋσ. •||•`,attachment: fs.createReadStream(__dirname + `/wall/jaan.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🥳", event.messageID, (err) => {}, true)
+    api.setMessageReaction("💋", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {

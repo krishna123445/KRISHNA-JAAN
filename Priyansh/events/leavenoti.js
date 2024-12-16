@@ -33,14 +33,14 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   const hours = moment.tz("Asia/Kolkata").format("HH");
 	const data = global.data.threadData.get(parseInt(threadID)) || (await Threads.getData(threadID)).data;
 	const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
-	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "leave" : "managed";
+	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "खुद ही भाग गया 😐👈" : "एडमिन ने गुस्से में निकाल दिया 😐👈";
 	const path = join(__dirname, "events", "123.mp4");
 	const pathGif = join(path, `${threadID}123.mp4`);
 	var msg, formPush
 
 	if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-(typeof data.customLeave == "undefined") ? msg = "╠💯𝐎𝐖𝐍𝐄𝐑💖👉𝐑𝐀𝐕𝐈 𝐊𝐔𝐌𝐀𝐑 💖💖                                       ⫷🧡 ⃝ ⃝ ⃝ ⃝ ⃝💚 ⃝ ⃝ ⃝🕉 ⃝ ⃝ ⃝💜 ⃝ ⃝ ⃝ ⃝ ⃝ ⃝❤️⫸𝐊𝐇𝐀𝐓𝐀𝐌 𝐓𝐀𝐓𝐀 𝐁𝐲𝐄 𝐁𝐲𝐄 🤧╣\n\n 𝐔𝐬𝐤𝐚 𝐍𝐚𝐚𝐦⫷🧡 ⃝ ⃝ ⃝ ⃝ ⃝💚 ⃝ ⃝ ⃝🕉 ⃝ ⃝ ⃝💜 ⃝ ⃝ ⃝ ⃝ ⃝ ⃝❤️⫸ » {name} \n\n 𝐑𝐞𝐚𝐬𝐨𝐧 »» {type} \n\n 𝐓𝐢𝐦𝐞 »» {time} \n\n 😍😍 ❣️ {session} ⫷🧡 ⃝ ⃝ ⃝ ⃝ ⃝💚 ⃝ ⃝ ⃝🕉 ⃝ ⃝ ⃝💜 ⃝ ⃝ ⃝ ⃝ ⃝ ⃝❤️⫸" : msg = data.customLeave;
+(typeof data.customLeave == "undefined") ? msg = "🍒🌸🌹 𝗢𝗪𝗡𝗘𝗥 ÷ 𝕂ℝ𝕀𝕊ℍℕ𝔸 𝔹𝔸𝔹𝕌 😘🌸🍒\n✧═════════•❁❀❁•═════════✧\n😍☞ 𝗞𝗥𝗜𝗦𝗛𝗡𝗔 𝗕𝗢𝗧 ☜😍\n✧═════════•❁❀❁•═════════✧\n☞︎[ 🅱🅰🆈 🙈 🅱🅰🆈 ]☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 🍒🌸𝗡𝗔𝗠𝗘 ÷  {name} ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 🍒🌸𝗥𝗘𝗔𝗦𝗢𝗡 ÷ {type} ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 🍒🌸𝗧𝗜𝗠𝗘 ÷ {time} ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 😊🌸💝 {session} 💝🌸😊 ☜︎\n✧═════════•❁❀❁•═════════✧" : msg = data.customLeave;
 	msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type).replace(/\{session}/g, hours <= 10 ? "Suprabhat" : 
     hours > 10 && hours <= 12 ? "Good Afternoon" :
     hours > 12 && hours <= 18 ? "Good Evening" : "Good Night").replace(/\{time}/g, time);  

@@ -2,7 +2,7 @@ module.exports.config = {
     name: "adminUpdate",
     eventType: ["log:thread-admins","log:thread-name", "log:user-nickname", "log:thread-call","log:thread-icon", "log:thread-color", "log:link-status", "log:magic-words", "log:thread-approval-mode", "log:thread-poll"],
     version: "1.0.1",
-    credits: "𝐑𝐈𝐘𝐀 𝐑𝐎𝐘",
+    credits: "Krishna",
     description: "Update group information quickly",
     envConfig: {
         autoUnsend: true,
@@ -47,18 +47,18 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
             case "log:thread-admins": {
                 if (logMessageData.ADMIN_EVENT == "add_admin") {
                     dataThread.adminIDs.push({ id: logMessageData.TARGET_ID })
-                    api.sendMessage(`[⚜️] 🍒💖𝐎𝐖𝐍𝐄𝐑 𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 , 𝐁𝐑𝐄𝐀𝐊𝐈𝐍𝐆 𝐍𝐄𝐖𝐒 [⚜️]\n» 𝐃𝐈𝐋 𝐃𝐄𝐇𝐋𝐀 𝐃𝐄𝐍𝐄 𝐖𝐀𝐋𝐈 𝐍𝐄𝐖𝐒 🤭 ${logMessageData.TARGET_ID}  𝐊𝐎 𝐀𝐃𝐌𝐈𝐍 𝐁𝐀𝐍𝐀 𝐃𝐈𝐘𝐀 𝐆𝐀𝐘𝐀 , 𝐀𝐁 𝐍𝐎𝐓𝐀𝐍𝐊𝐈 𝐌𝐀𝐓 𝐊𝐀𝐑𝐍𝐀 𝐀𝐃𝐌𝐈𝐍 𝐁𝐀𝐍 𝐆𝐘𝐀 𝐓𝐎 🤡🤡👈🏻`, threadID);
+                    api.sendMessage(`[⚜️] 🍒💖सुनो सभी मेंबर्स , एक ब्रेकिंग न्यूज आई है [⚜️]\n» दिल दहला देने वाली न्यूज 😝😜🤭 ${logMessageData.TARGET_ID}  को एडमिन बना दिया गया है , अब नौटंकी मत करना , एडमिन बन गया तो 😜😝🤡🤡👈🏻`, threadID);
                 }
                 else if (logMessageData.ADMIN_EVENT == "remove_admin") {
                     dataThread.adminIDs = dataThread.adminIDs.filter(item => item.id != logMessageData.TARGET_ID);
-                    api.sendMessage(`[⚜️] 🍒💖𝐎𝐖𝐍𝐄𝐑 𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 , 𝐁𝐑𝐄𝐀𝐊𝐈𝐍𝐆 𝐍𝐄𝐖𝐒 [⚜️]\n  • 𝐁𝐄𝐂𝐇𝐀𝐑𝐄 𝐊𝐎 𝐀𝐃𝐌𝐈𝐍 𝐒𝐄 𝐑𝐄𝐌𝐎𝐕𝐄 𝐊𝐀𝐑 𝐃𝐈𝐘𝐀 ☹️ 𝐀𝐁 𝐍𝐎𝐓𝐀𝐍𝐊𝐈 𝐍𝐇𝐈 𝐇𝐎𝐆𝐈 🤭🤭👈🤟 ${logMessageData.TARGET_ID}`, threadID);
+                    api.sendMessage(`[⚜️] 🍒💖सुनो सभी मेंबर्स , एक ब्रेकिंग न्यूज आई है [⚜️]\n  • बिचारा को एडमिन से रिमूव कर दिया  ☹️ अब नौटंकी नहीं होगी  🤭🤭👈🤟 ${logMessageData.TARGET_ID}`, threadID);
                 }
                 break;
             }
 
             case "log:user-nickname": {
                 dataThread.nicknames[logMessageData.participant_id] = logMessageData.nickname;
-                api.sendMessage(`[⚜️] 🍒💖𝐎𝐖𝐍𝐄𝐑 𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 𝐔𝐏𝐃𝐀𝐓𝐄  [⚜️]\n» ${(logMessageData.nickname.length == 0) ? `𝐓𝐎 𝐑𝐄𝐌𝐎𝐕𝐄 𝐔𝐒𝐄𝐑'𝐒 𝐍𝐀𝐌𝐄 ${logMessageData.participant_id}` : `𝐅𝐎𝐑 𝐔𝐏𝐃𝐀𝐓𝐄 𝐔𝐒𝐄𝐑'𝐒 𝐍𝐈𝐂𝐊𝐍𝐀𝐌𝐄𝐒  ${logMessageData.participant_id} to : ${logMessageData.nickname}`}.`, threadID);
+                api.sendMessage(`[⚜️] 🍒💖 कृष्णा ग्रुप अपडेट 🌹🌹  [⚜️]\n» ${(logMessageData.nickname.length == 0) ? `तो रिमूव यूजर नाम  ${logMessageData.participant_id}` : `फिर अपडेट यूजर निकनाम  ${logMessageData.participant_id} to : ${logMessageData.nickname}`}.`, threadID);
                 break;
             }
 
@@ -84,7 +84,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
             case "log:thread-call": {
                 if (logMessageData.event == "group_call_started") {
                     const name = await Users.getNameUser(logMessageData.caller_id);
-                    api.sendMessage(`[⚜️] 🍒💖 𝐎𝐖𝐍𝐄𝐑 𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 , 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄 [⚜️]\n» ${name} 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 ${(logMessageData.video) ? 'VIDEO ' : ''}CALL.`, threadID);
+                    api.sendMessage(`[⚜️] 🍒💖 𝐎𝐖𝐍𝐄𝐑 कृष्णा ग्रुप अपडेट  [⚜️]\n» ${name} स्ट्राइड  ${(logMessageData.video) ? वीडियो ' : ''}कॉल.`, threadID);
                 }
                 else if (logMessageData.event == "group_call_ended") {
                     const callDuration = logMessageData.call_duration;
@@ -101,12 +101,12 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
 
                     const timeFormat = `${hours}:${minutes}:${seconds}`;
 
-                    api.sendMessage(`[⚜️] 𝐎𝐖𝐍𝐄𝐑💖👉 𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 𝐊𝐈 𝐎𝐑 𝐒𝐄 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄 [⚜️]\n» ${(logMessageData.video) ? 'VIDEO ' : ''}CALL HAS ENDED.\n» CALL DURATION: ${timeFormat}`, threadID);
+                    api.sendMessage(`[⚜️] 𝐎𝐖𝐍𝐄𝐑💖👉 कृष्णा की ओर से वेलकम ग्रुप अपडेट  [⚜️]\n» ${(logMessageData.video) ? ' वीडियो' : ''}कॉल हद एडेड.\n» कॉल : ${timeFormat}`, threadID);
 
                 }
                 else if (logMessageData.joining_user) {
                     const name = await Users.getNameUser(logMessageData.joining_user);
-                    api.sendMessage(`[⚜️] 𝐎𝐖𝐍𝐄𝐑💖👉𝐑𝐈𝐘𝐀 𝐑𝐎𝐘 𝐊𝐈 𝐎𝐑 𝐒𝐄 𝐃𝐈𝐋 𝐒𝐄 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐆𝐑𝐎𝐔𝐏 𝐔𝐏𝐃𝐀𝐓𝐄  [⚜️]\n» ${name} 𝐉𝐎𝐈𝐍𝐄𝐃 𝐓𝐇𝐄 ${(logMessageData.group_call_type == '1') ? 'VIDEO ' : ''}CALL.`, threadID);
+                    api.sendMessage(`[⚜️] 𝐎𝐖𝐍𝐄𝐑💖👉 कृष्णा की ओर D से वेलकम ग्रुप अपडेट   [⚜️]\n» ${name} जॉइन्ड दा  ${(logMessageData.group_call_type == '1') ? वीडियो ' : ''} कॉल.`, threadID);
                 }
                 break;
             }

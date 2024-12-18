@@ -1,10 +1,10 @@
-𝐀𝐁𝐄𝐁𝐄dule.exports.config = {
-  name: "goiadmin",
+module.exports.config = {
+  name: "mention-bot",
   version: "1.0.0-beta-fixbyDungUwU",
   hasPermssion: 0,
-  credits: "ZyrosGenZ-fixbyDungUwU",
+  credits: "Ravi kumar",
   description: "Bot will rep ng tag admin or rep ng tagbot ",
-  commandCategory: "Other",
+  commandCategory: "system",
   usages: "",
   cooldowns: 1
 };

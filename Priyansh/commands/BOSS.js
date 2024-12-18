@@ -13,9 +13,9 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var name = await Users.getNameUser(event.senderID);
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
-  if(react.includes("krishna") ||
-     react.includes("Krishna") ||
-     react.includes("KRISHNA") ||
+  if(react.includes("ravi") ||
+     react.includes("Ravi") ||
+     react.includes("RAVI") ||
 react.includes("@ᴹʳ᭄ꔰ『Krishna』 ꔰ鬱࿐ ")) {
     var msg = {
         body: `💝🌸 𝐎𝐖𝐍𝐄𝐑 ÷ ☞︎ 💝 𝐌𝐑. 𝗞ᏒƖ𝘚Η𝑵𝔸 💝 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 💝🌸🍒 मेरे बाबू कृष्णा की प्रोफ़ाइल 💝🍒🌸 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 🍒🌸 मेरे मालिक की फेसबुक की लिंक 💝🌸🍒 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎  [ https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL ] ☜︎`,attachment: fs.createReadStream(__dirname + `/noprefix/boss.jpg`)

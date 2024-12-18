@@ -82,9 +82,8 @@ module.exports.run = async function({ event, api, Threads, Users }) {
           api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(logMessageData.video) ? 'Video' : ''} call has ended.\n❯ Call duration: ${timeFormat}`, threadID);
         } else if (logMessageData.joining_user) {
           const name = await Users.getNameUser(logMessageData.joining_user);
-          api.sendMessage(`❯ [ GROUP UPDATE ]\n❯ ${name} Joined the ${(logMessageData.group_call_type == '1') ? 'Video' : ''} call.`, threadID);
-        } const fs = require("fs");
-  const iconPath = __dirname + "/cache/coll1.gif";
+          api.sendMessage(`❯ [ GROUP UPDATE ]\n❯ ${name} Joined the ${(logMessageData.group_call_type == '1') ? 'Video' : ''} call.`, threadID); = __dirname + "/cache/coll1.gif";
+        } 
         break;
       }
       case "log:link-status": {

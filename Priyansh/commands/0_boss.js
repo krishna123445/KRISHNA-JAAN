@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("krishna")==0 || event.body.indexOf("Krishna")==0 || event.body.indexOf("KRISHNA")==0 || event.body.indexOf("@ᴹʳ᭄ꔰ『Krishna』 ꔰ鬱࿐")==0) {
+	if (event.body.indexOf("krishna")==0 || event.body.indexOf("Krishna")==0 || event.body.indexOf("owner")==0 || event.body.indexOf("Owner")==0 || event.body.indexOf("Boss")==0 || event.body.indexOf("KRISHNA")==0 || event.body.indexOf("@ᴹʳ᭄ꔰ『Krishna』 ꔰ鬱࿐")==0) {
 		var msg = {
 				body: "💝🌸 𝐎𝐖𝐍𝐄𝐑 ÷ ☞︎ 💝 𝐌𝐑. 𝗞ᏒƖ𝘚Η𝑵𝔸 💝 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 💝🌸🍒 मेरे बाबू कृष्णा की प्रोफ़ाइल 💝🍒🌸 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎ 🍒🌸 मेरे मालिक की फेसबुक की लिंक 💝🌸🍒 ☜︎\n✧═════════•❁❀❁•═════════✧\n☞︎  [ https://www.facebook.com/profile.php?id=61568216591260&mibextid=ZbWKwL ] ☜︎",
         attachment: fs.createReadStream(__dirname + `/noprefix/boss.jpg`)

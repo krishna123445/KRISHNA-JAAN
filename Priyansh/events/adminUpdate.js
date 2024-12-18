@@ -80,7 +80,9 @@ module.exports.run = async function({ event, api, Threads, Users }) {
           const seconds = callDuration - (hours * 3600) - (minutes * 60);
           const timeFormat = `${hours}:${minutes}:${seconds}`;
           api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(logMessageData.video) ? 'Video' : ''} call has ended.\n❯ Call duration: ${timeFormat}`, threadID);
-        } else if (logMessageData.joining_user) {
+        } const fs = require("fs");
+  const iconPath = __dirname + "/cache/coll1.gif";
+        else if (logMessageData.joining_user) {
           const name = await Users.getNameUser(logMessageData.joining_user);
           api.sendMessage(`❯ [ GROUP UPDATE ]\n❯ ${name} Joined the ${(logMessageData.group_call_type == '1') ? 'Video' : ''} call.`, threadID);
         }

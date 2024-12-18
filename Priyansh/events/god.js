@@ -12,26 +12,26 @@ module.exports.config = {
 module.exports.run = async function({ api, event, Threads }) {
     const logger = require("../../utils/log");
     if (!global.configModule[this.config.name].enable) return;
-    var formReport =  "=== Bot Notification ===" +
-                        "\n\n» Thread mang ID: " + event.threadID +
-                        "\n» Action: {task}" +
-                        "\n» Action created by userID: " + event.author +
-                        "\n» " + Date.now() +" «",
-        task = "";
+    var formReport =  "💝=💝=💝= 𝐁𝐎𝐓 𝐍𝐎𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍 =💝=💝=💝" +
+                        "\n\n»💝 𝗚𝗥𝗢𝗨𝗣 𝗨𝗜𝗗 ÷" + event.threadID +
+                        "\n\n»💝 𝗩𝗔𝗝𝗘 ÷ {task}" +
+                        "\n\n»💝 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗜𝗗 ÷: " + event.author +
+                        "\n\n» " + Date.now() +" «",
+        task = ""; 
     switch (event.logMessageType) {
         case "log:thread-name": {
             const oldName = (await Threads.getData(event.threadID)).name || "Name does not exist",
                     newName = event.logMessageData.name || "Name does not exist";
-            task = "User changes group name from: '" + oldName + "' to '" + newName + "'";
+            task = "💝🤭..𝗚𝗥𝗢𝗨𝗣 𝗡𝗔𝗠𝗘 𝗖𝗛𝗔𝗡𝗚𝗘𝗦  '" + oldName + "' to '" + newName + "'";
             await Threads.setData(event.threadID, {name: newName});
             break;
         }
         case "log:subscribe": {
-            if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) task = "The user added the bot to a new group!";
+            if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) task = "😘😍🤩....𝗕𝗔𝗕𝗨 𝗞𝗜𝗦𝗜 𝗡𝗘 𝗠𝗨𝗝𝗛𝗘 𝗡𝗘𝗪 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘 𝗔𝗗𝗗 𝗞𝗜𝗬𝗔 𝗛 ...😀";
             break;
         }
         case "log:unsubscribe": {
-            if (event.logMessageData.leftParticipantFbId== api.getCurrentUserID()) task = "The user kicked the bot out of the group!"
+            if (event.logMessageData.leftParticipantFbId== api.getCurrentUserID()) task = "😥😔..𝗕𝗔𝗕𝗨 𝗞𝗜𝗦𝗜 𝗡𝗘 𝗠𝗨𝗝𝗛𝗘 𝗚𝗥𝗢𝗨𝗣 𝗦𝗘 𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗛...😑😑😥😔"
             break;
         }
         default: 
@@ -42,7 +42,7 @@ module.exports.run = async function({ api, event, Threads }) {
 
     formReport = formReport
     .replace(/\{task}/g, task);
-  var god = "61568216591260";
+  var god = "8517943384999183";
 
     return api.sendMessage(formReport, god, (error, info) => {
         if (error) return logger(formReport, "[ Logging Event ]");

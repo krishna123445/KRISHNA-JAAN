@@ -28,6 +28,37 @@ module.exports.config = {
      return api.sendMessage("😁𝐊𝐨𝐍𝐬𝐀 𝐌𝐚𝐇𝐢𝐍𝐚 𝐂𝐡𝐀𝐥 𝐑𝐚𝐇𝐚 𝐇𝐚𝐢.... 🙂🤟", threadID);
    };
 
+       if ((event.body.toLowerCase() == "Good evening") ||(event.body.toLowerCase() == "Good evening") ||(event.body.toLowerCase() == "Good Evening") || (event.body.toLowerCase() == "GOOD EVENING")) {
+     return api.sendMessage("🍓🕊️🍒...𝚅𝞔ᏒⲨ ɢ૦૦Ｄ 𝞔𝚅𝞔𝑵Ɩ𝑵ɢ 𝙹Ɩ..🙈☺️🤩", threadID);
+   };
+
+   if ((event.body.toLowerCase() == "Good afternoon") || (event.body.toLowerCase() == "Good afternoon") ||(event.body.toLowerCase() == "Good Afternoon") || (event.body.toLowerCase() == "GOOD AFTERNOON")) {
+     return api.sendMessage("🍒🍒🍒...𝚅𝞔ᏒⲨ ɢ૦૦Ｄ 𝔸𝐹𝚃𝞔Ꮢ𝑵૦૦𝑵 𝙹Ɩ..🥰🙏🏻🤭", threadID);
+   };
+
+
+   if ((event.body.toLowerCase() == "💖") || (event.body.toLowerCase() == "💖💖") || (event.body.toLowerCase() == "💖💖💖") || (event.body.toLowerCase() == "💝") || (event.body.toLowerCase() == "💝💝") ||(event.body.toLowerCase() == "💝💝💝")) {
+     return api.sendMessage("💓💓💓", threadID);
+   };
+ 
+
+   if ((event.body.toLowerCase() == "💔") || (event.body.toLowerCase() == "💔💔") ||(event.body.toLowerCase() == "💔💔💔") || (event.body.toLowerCase() == "💔💔💔💔")) {
+     return api.sendMessage("🍒🍒🍒...𝗞𝗶𝗦𝗶 𝗣𝗮𝗚𝗮𝗟 𝗡𝗲 𝗧𝗼𝗗 𝗗𝗶𝗬𝗮 𝗛𝗲𝗔𝗿𝗧..🥰🙏🏻🤭", threadID);
+   };
+   
+
+   if ((event.body.toLowerCase() == "🧡") || (event.body.toLowerCase() == "💛") || (event.body.toLowerCase() == "💚") || (event.body.toLowerCase() == "🩵") || (event.body.toLowerCase() == "💙") || (event.body.toLowerCase() == "💜") || (event.body.toLowerCase() == "🤎") || (event.body.toLowerCase() == "🖤") || (event.body.toLowerCase() == "🩶") || (event.body.toLowerCase() == "🤍") || (event.body.toLowerCase() == "🩷") || (event.body.toLowerCase() == "💘") || (event.body.toLowerCase() == "💗") || (event.body.toLowerCase() == "💓") || (event.body.toLowerCase() == "💞") || (event.body.toLowerCase() == "💕") || (event.body.toLowerCase() == "💌") || (event.body.toLowerCase() == "💟") || (event.body.toLowerCase() == "♥️") || (event.body.toLowerCase() == "❣️") || (event.body.toLowerCase() == "❤️‍🩹") || (event.body.toLowerCase() == "❤️‍🔥")) {
+     return api.sendMessage("💑 koi", threadID);
+   };
+
+   if ((event.body.toLowerCase() == "🙈") || (event.body.toLowerCase() == "🙈🙈") || (event.body.toLowerCase() == "🙈🙈🙈") || (event.body.toLowerCase() == "🙈🙈🙈🙈") || (event.body.toLowerCase() == "☺️") || (event.body.toLowerCase() == "☺️☺️") || (event.body.toLowerCase() == "☺️☺️☺️") || (event.body.toLowerCase() == "☺️☺️☺️☺️") || (event.body.toLowerCase() == "😊") || (event.body.toLowerCase() == "😊😊") || (event.body.toLowerCase() == "😊😊😊") || (event.body.toLowerCase() == "😊😊😊😊") || (event.body.toLowerCase() == "🤭") || (event.body.toLowerCase() == "🤭🤭") || (event.body.toLowerCase() == "🤭🤭🤭") ||  (event.body.toLowerCase() == "🤭🤭🤭🤭")) {
+     return api.sendMessage("🍓🕊️🍒...𝗔𝗿𝗘 𝗔𝗿𝗘 𝗠𝗲𝗥𝗶 𝗕𝗲𝗕𝘆 𝗦𝗵𝗔𝗿𝗠𝗔 𝗚𝗮𝗬𝗶...🤭🤩🥰", threadID);
+   };
+
+   if ((event.body.toLowerCase() == "😴") || (event.body.toLowerCase() == "😴😴") || (event.body.toLowerCase() == "😴😴😴") || (event.body.toLowerCase() == "😴😴😴😴") || (event.body.toLowerCase() == "😪") || (event.body.toLowerCase() == "😪😪") || (event.body.toLowerCase() == "😪😪😪") ||  (event.body.toLowerCase() == "😪😪😪😪")) {
+     return api.sendMessage("🍒🕊️🍓...𝗞𝗼𝗜 𝗟𝗮𝗧 𝗠𝗮𝗥 𝗞𝗲 𝗨𝗱𝗛𝗮𝗢 𝗘𝘀𝗘 𝗚𝗿𝗣 𝗠𝗲 𝗦𝗼 𝗚𝗮𝗬𝗮...😒😏😆", threadID);
+   };
+      
    if ((event.body.toLowerCase() == "sim") || (event.body.toLowerCase() == "simsimi")) {
      return api.sendMessage("मेरी जान पहले [.] 👈 लगाओ फिर लिखो सिम 🙂🤟", threadID);
    };
